@@ -4,13 +4,15 @@ using UnityEngine;
 
 public class Apple : MonoBehaviour {
 
+	private SpriteRenderer spriteRenderer;
+	private CircleCollider2D circleCollider;
+
+	public GameObject collected;
+
 	// Use this for initialization
 	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
+		spriteRenderer = GetComponent<SpriteRenderer>();
+		circleCollider = GetComponent<CircleCollider2D>();
 		
 	}
 
@@ -18,7 +20,11 @@ public class Apple : MonoBehaviour {
 	{
 		if(collider.gameObject.tag == "Player")
 		{
-			Destroy(gameObject);
+			spriteRenderer.enabled = false;
+			circleCollider.enabled = false;
+			collected.SetActive(true);
+
+			Destroy(gameObject, 0.25f);
 		}
 	}
 }
