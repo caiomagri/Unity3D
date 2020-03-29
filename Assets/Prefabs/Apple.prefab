@@ -137,6 +137,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collected: {fileID: 1763488353573842}
+  Score: 10
 --- !u!212 &212507110309015226
 SpriteRenderer:
   m_ObjectHideFlags: 1

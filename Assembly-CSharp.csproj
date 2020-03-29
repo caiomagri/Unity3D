@@ -54,6 +54,8 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Apple.cs" />
+     <Compile Include="Assets\Scripts\FallingPlataform.cs" />
+     <Compile Include="Assets\Scripts\GameController.cs" />
      <Compile Include="Assets\Scripts\Player.cs" />
  <Reference Include="UnityEditor.StandardEvents">
  <HintPath>/home/dev/Game/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
